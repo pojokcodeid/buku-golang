@@ -5,7 +5,7 @@
 ### Apa Itu Go
 
 Go, atau Golang, adalah bahasa pemrograman open-source yang dikompilasi dan bertipe statis. Bahasa ini dikembangkan oleh Google dan pertama kali dirilis pada November 2009. Tiga tokoh utama di balik pengembangan Go adalah Rob Pike, Ken Thompson, dan Robert Griesemer.
-Go dirancang sebagai bahasa pemrograman umum yang sederhana, efisien, dan memiliki pustaka standar yang kuat. Bahasa ini sangat cocok untuk membangun aplikasi web yang skalabel dan tersedia tinggi, serta dapat digunakan untuk aplikasi CLI, desktop, maupun mobile.
+Go dirancang sebagai bahasa pemrograman umum yang sederhana, efisien, dan memiliki pustaka standar yang kuat. Bahasa ini sangat cocok untuk membangun aplikasi web yang skalabel dan system dengan kebutuhan tinggi, serta dapat digunakan untuk aplikasi CLI, desktop, maupun mobile.
 
 ### Keunggulan Go
 
