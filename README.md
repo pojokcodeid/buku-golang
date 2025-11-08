@@ -2,8 +2,6 @@
 
 ## Pengantar dan Instalasi Bahasa Pemrograman Go (Golang)
 
-Tutorial ini merupakan bagian pertama dari seri pembelajaran Golang. Di dalamnya dijelaskan pengenalan bahasa Go, keunggulannya dibandingkan bahasa lain, serta panduan instalasi di berbagai sistem operasi.
-
 ### Apa Itu Go
 
 Go, atau Golang, adalah bahasa pemrograman open-source yang dikompilasi dan bertipe statis. Bahasa ini dikembangkan oleh Google dan pertama kali dirilis pada November 2009. Tiga tokoh utama di balik pengembangan Go adalah Rob Pike, Ken Thompson, dan Robert Griesemer.
