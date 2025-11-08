@@ -60,6 +60,3 @@ Jika berhasil, akan muncul versi Go yang terinstal, misalnya:
 ```bash
 go version go1.19.2 linux/amd64
 ```
-
-Tutorial selanjutnya akan membahas cara membuat program “Hello World” pertama menggunakan Go.
-Jika kamu ingin versi batch, markdown interaktif, atau integrasi ke materi presentasi, saya bisa bantu menyusunnya juga.
