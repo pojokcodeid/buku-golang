@@ -7,6 +7,8 @@
   - [Keunggulan Go](#Keunggulan-Go)
   - [Produk Populer yang Menggunakan Go](#Produk-Populer-yang-Menggunakan-Go)
   - [Panduan Instalasi Go](#Panduan-Instalasi-Go)
+- [Hello World](#Hello-World)
+- [Variabel](#Variabel)
 
 ## Pengantar dan Instalasi Bahasa Pemrograman Go (Golang)
 
