@@ -251,3 +251,142 @@ Contoh :
 var umur int
 fmt.Println("Umur awal saya adalah", umur)
 ```
+
+Jika tidak diberi nilai, Go akan menginisialisasi variabel dengan nilai default sesuai tipe datanya. Untuk int, nilai default-nya adalah 0.
+
+2. Memberi Nilai Setelah Deklarasi
+
+Variabel dapat diberi nilai setelah dideklarasikan:
+
+```go
+var umur int
+umur = 29
+fmt.Println("Umur setelah assignment pertama:", umur)
+umur = 54
+fmt.Println("Umur setelah assignment kedua:", umur)
+```
+
+3. Deklarasi Sekaligus Inisialisasi
+
+Kita bisa langsung memberi nilai saat deklarasi:
+
+```go
+var umur int = 29
+```
+
+Go juga mendukung type inference, sehingga tipe data bisa dihilangkan:
+
+```go
+var umur = 29 // Go akan menyimpulkan bahwa tipe data adalah int
+```
+
+4. Deklarasi Banyak Variabel Sekaligus
+
+Deklarasi beberapa variabel dengan tipe yang sama:
+
+```go
+var harga, jumlah int = 5000, 100
+```
+
+Atau dengan type inference:
+
+```go
+var harga, jumlah = 5000, 100
+```
+
+Jika tidak diberi nilai, maka harga dan jumlah akan bernilai 0.
+
+5. Deklarasi Variabel dengan Tipe Berbeda
+
+Gunakan blok var:
+
+```go
+var (
+  nama = "Naveen"
+  umur = 38
+  tinggi int
+)
+```
+
+Variabel tinggi tidak diberi nilai, maka nilainya adalah 0.
+
+6. Deklarasi Singkat (Short Hand)
+
+Go menyediakan cara singkat menggunakan :=:
+
+```go
+count := 10
+```
+
+Untuk banyak variabel:
+
+```go
+nama, umur := "Naveen", 29
+```
+
+Namun, semua variabel di sisi kiri harus diberi nilai. Contoh berikut akan error:
+
+```go
+nama, umur := "Naveen" // Error: jumlah variabel dan nilai tidak cocok
+```
+
+Short hand hanya bisa digunakan jika ada variabel baru yang dideklarasikan:
+
+```go
+a, b := 20, 30
+b, c := 40, 50 // b sudah ada, c baru → valid
+b, c = 80, 90  // hanya assignment, bukan deklarasi
+```
+
+Jika semua variabel sudah ada, maka akan error:
+
+```go
+a, b := 40, 50 // Error: tidak ada variabel baru
+```
+
+7. Nilai dari Perhitungan Runtime
+
+Variabel bisa menyimpan hasil perhitungan saat program berjalan:
+
+```go
+a, b := 145.8, 543.8
+c := math.Min(a, b)
+fmt.Println("Nilai minimum adalah", c)
+```
+
+8. Tipe Data Harus Konsisten
+
+Go adalah bahasa yang strongly typed. Artinya, variabel bertipe tertentu tidak bisa diberi nilai dari tipe lain:
+
+```go
+age := 29
+age = "Naveen" // Error: tidak bisa assign string ke variabel bertipe int
+```
+
+📝 Catatan: Deklarasi Singkat (:=) dalam Go
+
+- := adalah cara cepat untuk mendeklarasikan dan menginisialisasi variabel tanpa menyebutkan tipe data.
+- Hanya bisa digunakan di dalam fungsi (misalnya di dalam main() atau fungsi lainnya).
+- Tidak bisa digunakan di level package (di luar fungsi) → akan menghasilkan error.
+- Contoh valid:
+
+```go
+func main() {
+    nama := "Asep"
+    umur := 30
+}
+```
+
+- Contoh tidak valid:
+
+```go
+package main
+
+nama := "Asep" // ❌ Error: non-declaration statement outside function body
+```
+
+- Untuk deklarasi di luar fungsi, gunakan var:
+
+```go
+var nama = "Asep" // ✅ Valid di level package
+```
